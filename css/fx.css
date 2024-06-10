@@ -1,0 +1,17 @@
+button:hover {
+  background-color: var(--secondary-color) !important;
+  box-shadow: 0 3px 5px rgba(240, 248, 255, 0.515);
+}
+
+/* Hover Styles */
+.chair-container:hover .rounded-rectangle {
+  height: 50px; /* Set the height of the rectangle when hovered */
+  visibility: visible;
+}
+
+.chair:hover {
+  transform: translateY(-40%);
+}
+/* .chair:hover .cross {
+  display: block;
+} */

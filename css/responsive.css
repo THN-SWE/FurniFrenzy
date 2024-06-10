@@ -1,0 +1,84 @@
+/* responsive  */
+@media (max-width: 576px) {
+  /* #description{
+          font-size: smaller;
+      } */
+  #sec-2,
+  #sec-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #btn-flex-1 {
+    justify-content: center;
+  }
+}
+
+/* Styles for when the viewport is in landscape orientation */
+/* created  for section 3.  */
+@media (orientation: portrait) {
+  #sec-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #right-sec-3 {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-items: center;
+  }
+  .chair {
+    /* height: 50%; */
+    width: 100%;
+  }
+  #btn-flex {
+    justify-content: center;
+  }
+  .cross {
+    height: 1%;
+  }
+  footer > div {
+    background-color: var(--primary-color);
+    display: block;
+    grid-template-rows: 1fr 1fr;
+
+    grid-auto-rows: minmax(auto, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    gap: 15px;
+     
+  }
+}
+
+@media (orientation: landscape) {
+  footer > div {
+    background-color: var(--primary-color);
+
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .footer-links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 539px) {
+  .blogs-sec-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
